@@ -1,0 +1,17 @@
+name: Test Application 
+
+on: [push]
+
+job: 
+  test_application:
+    name: Run unit test
+    run-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: install Dependencies
+        run: python3 -r requirements.txt
+
+      - name: Run Unit Tests
+        run: python3 -m unittest
