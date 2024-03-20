@@ -13,8 +13,5 @@ RUN pip install -r requirements.txt
 # Copy your FastAPI application code
 COPY . .
 
-# Expose port (adjust if needed)
-EXPOSE 8000
-
 # Run the application using Gunicorn with Uvicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "main:app"]
+CMD ["Uvicorn", "main:app", "--host", "0.0.0.0"]
