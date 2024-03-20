@@ -1,5 +1,5 @@
 from pydantic import BaseModel
 
 class Attempt(BaseModel):
-    words: str
+    word: str
     letters: list[str]
