@@ -92,9 +92,9 @@ class TestGameLogicService(unittest.TestCase):
 
 
         # Assert 
-        self.assertTrue(actual_valid)
-        self.assertTrue(actual_valid_two)
-        self.assertFalse(actual_invalid)
+        self.assertTrue(actual_valid, 'Expected true got false')
+        self.assertTrue(actual_valid_two, 'Expected true got false')
+        self.assertFalse(actual_invalid, 'Expected false got true')
 
     def test_letters_can_make_word_only_generate_three_plus_letter_words(self):
         inputs = ['o', 'n', 'p', 'j', 'p']

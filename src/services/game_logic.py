@@ -97,8 +97,8 @@ class GameLogicService():
             
 
     def get_score(self, word, letters: list[str]) -> int:
-        # if len(word) < 3:
-        #     return 0
+        if len(word) < 3:
+            return 0
 
         if not self.search_for_word(word):
             return 0
