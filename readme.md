@@ -1,3 +1,4 @@
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/bonganibg/wordies-api/main.yml)
 # Wordies API 
 API for handling letter generation and validation for the Wordies game.
 
