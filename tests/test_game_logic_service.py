@@ -96,12 +96,12 @@ class TestGameLogicService(unittest.TestCase):
         self.assertTrue(actual_valid_two)
         self.assertFalse(actual_invalid)
 
-    # def test_letters_can_make_word_only_generate_three_plus_letter_words(self):
-    #     inputs = ['o', 'n', 'p', 'j', 'p']
+    def test_letters_can_make_word_only_generate_three_plus_letter_words(self):
+        inputs = ['o', 'n', 'p', 'j', 'p']
 
-    #     actual = self.game_logic_service.letters_can_make_word(inputs)
+        actual = self.game_logic_service.letters_can_make_word(inputs)
 
-    #     self.assertFalse(actual, "Input should not be able to create word")
+        self.assertFalse(actual, "Input should not be able to create word")
 
 
     def test_total_possible_words_correct_count(self):
