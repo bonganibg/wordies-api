@@ -1,0 +1,15 @@
+name: Test Applicaiton 
+
+on: [push]
+
+jobs:
+  push_to_registry:
+    name: Run unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+      
+      - name: Run Tests
+        run: |
+          python3 -m unittest
