@@ -47,8 +47,8 @@ class GameLogicService():
 
         for word in self.__word_list:
 
-            # if len(word) < 3:
-            #     continue
+            if len(word) < 3:
+                continue
 
             word_found = True
             count = 0
@@ -73,8 +73,8 @@ class GameLogicService():
 
         for word in self.__word_list:
             
-            # if len(word) < 3:
-            #     continue
+            if len(word) < 3:
+                continue
 
             word_found = True
             count = 0
