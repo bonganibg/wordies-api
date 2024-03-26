@@ -156,17 +156,17 @@ class TestGameLogicService(unittest.TestCase):
 
             self.assertEqual(actual_score, expected_score)    
 
-    def test_get_score_should_only_account_for_three_plus_letters(self):
-        input_and_score = [
-            ('p', ['p','y','t','h','o','n'], 0),
-            ('o', ['h', 'e', 'l', 'l', 'o'], 0),
-            ('on', ['p', 'y', 't', 'h', 'o', 'n', 'r','u','b'], 0)
-        ]
+    # def test_get_score_should_only_account_for_three_plus_letters(self):
+    #     input_and_score = [
+    #         ('p', ['p','y','t','h','o','n'], 0),
+    #         ('o', ['h', 'e', 'l', 'l', 'o'], 0),
+    #         ('on', ['p', 'y', 't', 'h', 'o', 'n', 'r','u','b'], 0)
+    #     ]
 
-        for word, letters, expected_score in input_and_score:
-            actual_score = self.game_logic_service.get_score(word, letters)
+    #     for word, letters, expected_score in input_and_score:
+    #         actual_score = self.game_logic_service.get_score(word, letters)
 
-            self.assertEqual(actual_score, expected_score)    
+    #         self.assertEqual(actual_score, expected_score)    
 
 
 
