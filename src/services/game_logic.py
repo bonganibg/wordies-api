@@ -46,6 +46,10 @@ class GameLogicService():
     def letters_can_make_word(self, letters):        
 
         for word in self.__word_list:
+
+            # if len(word) < 3:
+            #     continue
+
             word_found = True
             count = 0
 
@@ -68,6 +72,10 @@ class GameLogicService():
         total = 0
 
         for word in self.__word_list:
+            
+            # if len(word) < 3:
+            #     continue
+
             word_found = True
             count = 0
 
@@ -89,10 +97,14 @@ class GameLogicService():
             
 
     def get_score(self, word, letters: list[str]) -> int:
+        # if len(word) < 3:
+        #     return 0
+
         if not self.search_for_word(word):
             return 0
         
-        if len(word) == len(letters):
+        print(word, letters)
+        if len(word) == len(letters):            
             return len(word) * 2
         
         return len(word)

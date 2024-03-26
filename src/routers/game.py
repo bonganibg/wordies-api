@@ -15,8 +15,7 @@ def get_words(level: int):
     return game_controller.get_round_details(level)
 
 @router.post("/score")
-def get_score(attempt: Attempt):
-    print("we are in here")
+def get_score(attempt: Attempt):    
     result = game_controller.get_score(attempt)
     
     return {
